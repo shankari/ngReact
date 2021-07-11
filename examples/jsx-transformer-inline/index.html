@@ -33,6 +33,12 @@
     <div class="content">
       <div class="header">
         <h1>
+          <div>Hello {{person.fname}} {{person.lname}}</div>
+          <small>
+            <code>&lt;Directly from angular/&gt;</code>
+          </small>
+        </h1>
+        <h1>
           <div><hello fname="person.fname" lname="person.lname"/></div>
           <small>
             <code>&lt;hello fname="person.fname" lname="person.lname"/&gt;</code>
@@ -52,9 +58,9 @@
     <script src="../../bower_components/angular/angular.js"></script>
     <script src="../../bower_components/react/react.js"></script>
     <script src="../../bower_components/react/react-dom.js"></script>
-    <script src="../../bower_components/react/JSXTransformer.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="../../ngReact.js"></script>
-    <script src="Hello.jsx" type="text/jsx"></script>
+    <script src="Hello.jsx" type="text/babel"></script>
     <script src="app.js"></script>
   </body>
 </html>
