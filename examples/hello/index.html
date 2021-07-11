@@ -31,6 +31,12 @@
   </head>
   <body ng-app="app" ng-controller="mainCtrl">
     <div class="content">
+        <h1>
+          <div>Hello {{person.fname}} {{person.lname}}</div>
+          <small>
+            <code>&lt;From angular to check bi-directional binding/&gt;</code>
+          </small>
+        </h1>
       <div class="header">
         <h1>
           <div><react-component name="Hello" props="person"/></div>
